@@ -1,0 +1,19 @@
+{
+  "name": "swipe-json-schema",
+  "version": "0.0.1",
+  "description": "JSON Schema Generator for Swipe(http://www.swipe.net/)",
+  "scripts": {
+    "start": "typhen",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "swipe",
+    "JSON Schema"
+  ],
+  "author": "horiuchi",
+  "license": "MIT",
+  "dependencies": {
+    "typhen": "^0.4.13",
+    "typhen-json-schema": "git://github.com/horiuchi/typhen-json-schema.git#union-type"
+  }
+}
