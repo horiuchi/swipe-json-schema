@@ -4,16 +4,40 @@
   "description": "JSON Schema Generator for Swipe(http://www.swipe.net/)",
   "scripts": {
     "start": "typhen",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --timeout 10000 --require intelli-espower-loader"
   },
   "keywords": [
     "swipe",
-    "JSON Schema"
+    "jsonschema",
+    "typescript"
   ],
-  "author": "horiuchi",
+  "author": {
+    "name": "Hiroki Horiuchi",
+    "email": "horiuchi.g@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/horiuchi/swipe-json-schema.git"
+  },
+  "bugs": {
+    "url": "https://github.com/horiuchi/swipe-json-schema/issues"
+  },
   "license": "MIT",
   "dependencies": {
     "typhen": "^0.4.13",
     "typhen-json-schema": "git://github.com/horiuchi/typhen-json-schema.git#union-type"
+  },
+  "directories": {
+    "test": "test/"
+  },
+  "devDependencies": {
+    "del": "^2.0.2",
+    "espower-loader": "^1.0.0",
+    "glob": "^5.0.15",
+    "intelli-espower-loader": "^1.0.0",
+    "mocha": "^2.3.3",
+    "power-assert": "^1.1.0",
+    "tv4": "^1.2.7",
+    "tv4-formats": "^1.0.2"
   }
 }
