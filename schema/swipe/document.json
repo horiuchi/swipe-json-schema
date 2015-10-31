@@ -32,7 +32,7 @@
       "description": "Document orientation, `portrait` (default) or `landscape` ",
       "type": "string"
     },
-    "scene": {
+    "scenes": {
       "description": "Named _Scenes_ dictionary ",
       "type": "object",
       "properties": {},

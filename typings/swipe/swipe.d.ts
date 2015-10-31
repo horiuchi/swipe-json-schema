@@ -32,7 +32,7 @@ declare module swipe {
         /** Document orientation, `portrait` (default) or `landscape` */
         orientation?: string;
         /** Named _Scenes_ dictionary */
-        scene?: { [name: string]: Scene; };
+        scenes?: { [name: string]: Scene; };
         /** Named _Elements_ dictionary */
         elements?: { [name: string]: Element; };
         /** Named _Paths_ dictionary */
