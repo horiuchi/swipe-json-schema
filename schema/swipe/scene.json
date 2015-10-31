@@ -3,64 +3,7 @@
   "title": "Scene",
   "description": "A Scene defines a set of properties and Elements to be shared among multile Pages. It also defines a background music to be played when one of those Pages is active.\nA Page is always associated with a Scene, either explicity with the \"scene\" property or implicitly with the default scene with name \"*\".\nThe Page inherits all the properties from the associated scene, including Elements. When the same property is specified both in the Page and the Scene, the value specified in the Page will be used. The only exception to this rule is Elements, which will be deep-merged (deep-inheritance). Elements with the id property will be merged, and other Elements will be appended (Elements defined in the Scene are always placed below Elements specified in the page).",
   "type": "object",
-  "properties": {
-    "bgm": {
-      "description": "Specifies the background music to play. ",
-      "type": "string"
-    },
-    "bc": {
-      "description": "Background color, the default is `white` ",
-      "type": "string"
-    },
-    "fpt": {
-      "description": "Frame per second, the default is `60` ",
-      "type": "integer"
-    },
-    "transition": {
-      "description": "Inter-page transition style, `scroll` (default), `fadeIn` or `replace` ",
-      "type": "string"
-    },
-    "play": {
-      "description": "Play(animation) control, `auto` (default), `pause`, `always` or `scroll` ",
-      "type": "string"
-    },
-    "duration": {
-      "description": "Duration of the animation in seconds, the default is `0.2` seconds ",
-      "type": "number"
-    },
-    "repeat": {
-      "description": "Repeat rule of the animation, default is `false` ",
-      "type": "boolean"
-    },
-    "rewind": {
-      "description": "Rewind rule of the animation when the user leaves the page, defaul is `false` ",
-      "type": "boolean"
-    },
-    "scene": {
-      "description": "Name of the scene, default is `*` ",
-      "type": "string"
-    },
-    "audio": {
-      "description": "Specifies the sound effect to be played in sync with the animation ",
-      "type": "string"
-    },
-    "speech": {
-      "description": "Specifies the text-to-speech to be played in sync with the animation ",
-      "$ref": "http://www.swipe.net/schema/swipe/speech_info.json"
-    },
-    "vibrate": {
-      "description": "Specifies the vibration in sync with the animation, the default is `false` ",
-      "type": "boolean"
-    },
-    "elements": {
-      "description": "Collection of _Elements_",
-      "minItems": 1,
-      "type": "array",
-      "items": {
-        "$ref": "http://www.swipe.net/schema/swipe/element.json"
-      }
-    }
-  },
+  "properties": {},
   "additionalProperties": false,
   "required": []
 }

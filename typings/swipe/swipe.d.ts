@@ -82,14 +82,18 @@ declare module swipe {
         elements?: Element[];
     }
 
+    interface ScenePage extends Page {
+        /** Specifies the background music to play. */
+        bgm?: URL;
+    }
+
     /**
      * A Scene defines a set of properties and Elements to be shared among multile Pages. It also defines a background music to be played when one of those Pages is active.
      * A Page is always associated with a Scene, either explicity with the "scene" property or implicitly with the default scene with name "*".
      * The Page inherits all the properties from the associated scene, including Elements. When the same property is specified both in the Page and the Scene, the value specified in the Page will be used. The only exception to this rule is Elements, which will be deep-merged (deep-inheritance). Elements with the id property will be merged, and other Elements will be appended (Elements defined in the Scene are always placed below Elements specified in the page).
      */
-    interface Scene extends Page {
-        /** Specifies the background music to play. */
-        bgm?: URL;
+    interface Scene {
+        [name: string]: ScenePage;
     }
 
     interface AnimatableProperties {
