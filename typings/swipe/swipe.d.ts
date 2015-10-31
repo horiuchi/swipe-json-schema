@@ -60,7 +60,7 @@ declare module swipe {
         /** Inter-page transition style, `scroll` (default), `fadeIn` or `replace` */
         transition?: string;
         /** Play(animation) control, `auto` (default), `pause`, `always` or `scroll` */
-        play?: string;
+        animation?: string;
         /** Duration of the animation in seconds, the default is `0.2` seconds */
         duration?: number;
         /** Repeat rule of the animation, default is `false` */

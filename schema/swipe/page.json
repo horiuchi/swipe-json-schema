@@ -16,7 +16,7 @@
       "description": "Inter-page transition style, `scroll` (default), `fadeIn` or `replace` ",
       "type": "string"
     },
-    "play": {
+    "animation": {
       "description": "Play(animation) control, `auto` (default), `pause`, `always` or `scroll` ",
       "type": "string"
     },
