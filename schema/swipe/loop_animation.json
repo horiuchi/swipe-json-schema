@@ -13,10 +13,15 @@
         "path",
         "sprite"
       ]
+    },
+    "repeat": {
+      "description": "it repeats the same animation multiple times specified by the repeat property (the default is `1`). ",
+      "type": "integer"
     }
   },
   "additionalProperties": false,
   "required": [
-    "style"
+    "style",
+    "repeat"
   ]
 }

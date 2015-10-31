@@ -211,6 +211,8 @@ declare module swipe {
     interface LoopAnimation {
         /** The Loop Animation must have a "style" property */
         style: LoopStyle;
+        /** it repeats the same animation multiple times specified by the repeat property (the default is `1`). */
+        repeat: integer;
     }
 
     interface Style {
